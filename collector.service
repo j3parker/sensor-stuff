@@ -1,0 +1,11 @@
+[Unit]
+Description=Metrics collector service
+After=network.target
+
+[Service]
+User=jacob_solidangle_ca
+WorkingDirectory=/home/jacob_solidangle_ca/src/src/metrics/bin/Release/net6.0
+ExecStart=/home/jacob_solidangle_ca/src/src/metrics/bin/Release/net6.0/metrics
+
+[Install]
+WantedBy=multi-user.target
